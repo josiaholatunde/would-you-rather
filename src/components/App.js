@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Leaderboard from './Leaderboard';
 import SignIn from './SignIn';
+import Questions from './Questions';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Switch>
               <Route path='/leaderboard' exact component={Leaderboard} />
               <Route path='/login' exact component={SignIn} />
+              <Route path='/questions' exact component={Questions} />
               <Route path='/' component={Home} />
             </Switch>
           </div>

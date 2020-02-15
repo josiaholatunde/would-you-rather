@@ -21,11 +21,11 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <ul className='navbar-nav nav-right'>
-                    <Link className="nav-item d-flex align-items-center">
+                    <li className="nav-item d-flex align-items-center">
                         Hello Olatunde
-                    </Link>
+                    </li>
                     <li className="nav-item ml-3">
-                        <Link className="nav-link" >Logout</Link>
+                        <Link className="nav-link" to='/logout' >Logout</Link>
                     </li>
                 </ul>
             </div>

@@ -1,32 +1,31 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top" style={{ backgroundColor: '#e3f2fd;'}}>
+        <nav className="navbar navbar-expand-lg navbar-light bg-danger text-white sticky-top" >
            <div className='container'>
-           <a className="navbar-brand" href="#">Would You Rather</a>
-            <button classNameName="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
+           <Link className="navbar-brand" to="/">Would You Rather</Link>
 
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                        <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" >New Question</a>
+                        <Link className="nav-link" to='/question/add'>New Question</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" >Leaderboard</a>
+                        <Link className="nav-link" to='/leaderboard'>Leaderboard
+                        </Link>
                     </li>
                 </ul>
                 <ul className='navbar-nav nav-right'>
-                    <li className="nav-item">
-                        <a className="nav-link" >Hello Olatunde</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" >Logout</a>
+                    <Link className="nav-item d-flex align-items-center">
+                        Hello Olatunde
+                    </Link>
+                    <li className="nav-item ml-3">
+                        <Link className="nav-link" >Logout</Link>
                     </li>
                 </ul>
             </div>

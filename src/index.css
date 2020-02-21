@@ -15,3 +15,12 @@ a {
 input, select {
   box-shadow: none !important;
 }
+
+.img-fluid {
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.pointer {
+  cursor: pointer;
+}

@@ -1,7 +1,17 @@
 # Would You Rather Project
 
+# Ogunboyejo Olatunde 
+## Udacity Nanodegree ReactJS Project 
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Mode of usage](#mode-of-usage)
+- [Setting up the application](#setting-up-the-app)
+
+## Introduction
 This is the starter code for the final assessment project for Udacity's React & Redux course.
 
+## Introduction
 The `_DATA.js` file represents a fake database and methods that let you access the data. The only thing you need to edit in the ` _DATA.js` file is the value of `avatarURL`. Each user should have an avatar, so you’ll need to add the path to each user’s avatar.
 
 Using the provided starter code, you'll build a React/Redux front end for the application. We recommend using the [Create React App](https://github.com/facebook/create-react-app) to bootstrap the project.
@@ -95,6 +105,19 @@ Your code will talk to the database via 4 methods:
 | qid | String | The id of the question that was answered|
 | answer | String | The option the user selected. The value should be either `"optionOne"` or `"optionTwo"`|
 
-## Contributing
+## Mode of usage
+* Login to the application with any of the users. You should immediately see the questions the currently logged in user is yet to answer. The tab to view his/her already answered questions should also be visible.
 
-This repository is the starter code for *all* Udacity students. Therefore, we most likely will not accept pull requests. For details, check out [CONTRIBUTING.md](https://github.com/udacity/reactnd-project-would-you-rather-starter/blob/master/CONTRIBUTING.md).
+* You could choose to create a new user account and login with that user
+
+* You could create a new poll, view already answered polls, vote in polls, logout and view the leaderboard for the top users who have asked and answered the most questions 
+
+## TL;DR
+
+### Setting up the application
+
+To get started developing right away:
+* clone the application at https://github.com/josiaholatunde/would-you-rather
+* install all project dependencies with `npm install`
+* start the development server with `npm start`
+
